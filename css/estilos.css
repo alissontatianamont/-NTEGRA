@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+header{
+    width: 100%;
+    background-color: red;
+    position: sticky;
+}
+#check{
+    display: none;
+}
+.menu ul{
+    display: flex;
+    float: right;
+    margin-top: -70px;
+}
+.menu li{
+    list-style: none;
+    padding: 15px;
+}
+.menu li:hover{
+    background-color: black;
+    transition: all 3000ms;
+}
+.menu a{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+
+
+/***AQUI VAN LAS ESTELAS DEL FONDO***/
+body {
+    background:black;
+    background-size:cover;
+    
+    
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: fixed;   
+}
+
+/*IMAGEN OPACA*/
+.imagen_opaca{
+    height: 50vh;
+}
+.imagen_opaca::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 4, 255);
+    position: absolute;
+    opacity: 0.4;
+}
+.cuadro_flotante{
+    background-color: white;
+    margin-top: 8vw;
+    margin-left: 10vw;
+    height: 80%;
+    box-shadow: 10px 15px 15px 15px rgb(238, 246, 247);
+    
+}
+
+@media screen and (max-width:1000px){
+
+    .menu{
+        width: 100%;
+        height: 100vh;
+        background: rgb(170, 168, 168);
+    }
+    .menu ul{
+        display:block;
+        position: absolute;
+        top: 120px;
+        height: 100vh;
+    }
+}
